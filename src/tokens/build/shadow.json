@@ -1,0 +1,32 @@
+{
+  "Button": {
+    "value": "0px 1px 3px 0px rgba(0, 0, 0, 0.2)",
+    "description": "",
+    "cssVariable": "--ao-box-shadow-button"
+  },
+  "Button Bar": {
+    "value": "0px -1px 3px 0px rgba(0, 0, 0, 0.2)",
+    "description": "",
+    "cssVariable": "--ao-box-shadow-button-bar"
+  },
+  "Flyout": {
+    "value": "-2px 0px 4px 0px rgba(0, 0, 0, 0.25)",
+    "description": "shadow to the left",
+    "cssVariable": "--ao-box-shadow-flyout"
+  },
+  "Notification Panel": {
+    "value": "-1px 0px 5px 0px rgba(0, 0, 0, 0.4)",
+    "description": "",
+    "cssVariable": "--ao-box-shadow-notification-panel"
+  },
+  "Modal": {
+    "value": "0px 0px 48px 9px rgba(0, 0, 0, 0.12),0px 23px 32px 0px rgba(0, 0, 0, 0.14),0px 4px 8px 0px rgba(0, 0, 0, 0.25)",
+    "description": "",
+    "cssVariable": "--ao-box-shadow-modal"
+  },
+  "Card": {
+    "value": "0px 0px 1px 1px rgba(0, 0, 0, 0.1)",
+    "description": "",
+    "cssVariable": "--ao-box-shadow-card"
+  }
+}

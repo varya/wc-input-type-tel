@@ -1,0 +1,8 @@
+@import "../_common/typography-mixins.css";
+
+:host {
+  @mixin base-typography;
+}
+
+.element-name {
+}

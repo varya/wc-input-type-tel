@@ -1,0 +1,17 @@
+{
+  "Icon Default": {
+    "value": "14px",
+    "description": "",
+    "cssVariable": "--ao-sizing-icon-default"
+  },
+  "Icon Large": {
+    "value": "16px",
+    "description": "",
+    "cssVariable": "--ao-sizing-icon-large"
+  },
+  " Icon Small": {
+    "value": "12px",
+    "description": "",
+    "cssVariable": "--ao-sizing-icon-small"
+  }
+}

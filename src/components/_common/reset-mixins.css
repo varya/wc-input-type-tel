@@ -1,0 +1,30 @@
+/* A collection of mixins resetting default browser styles */
+
+@define-mixin button-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: auto;
+  overflow: visible;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@define-mixin paragraph-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}

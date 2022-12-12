@@ -1,0 +1,32 @@
+{
+  "4": {
+    "value": "4px",
+    "description": "for 4px grid when needed",
+    "cssVariable": "--ao-spacing-4"
+  },
+  "8": {
+    "value": "8px",
+    "description": "",
+    "cssVariable": "--ao-spacing-8"
+  },
+  "12": {
+    "value": "12px",
+    "description": "for 4px grid when needed",
+    "cssVariable": "--ao-spacing-12"
+  },
+  "16": {
+    "value": "16px",
+    "description": "",
+    "cssVariable": "--ao-spacing-16"
+  },
+  "24": {
+    "value": "24px",
+    "description": "",
+    "cssVariable": "--ao-spacing-24"
+  },
+  "32": {
+    "value": "32px",
+    "description": "",
+    "cssVariable": "--ao-spacing-32"
+  }
+}

@@ -1,0 +1,133 @@
+@define-mixin base-typography {
+  /* * { */
+  --text-color: var(--ao-color-typography-default);
+  --text-font-family: var(--ao-font-family-default);
+  --text-font-size: var(--ao-font-size-medium);
+  --text-line-height: normal;
+  --text-font-weight: normal;
+
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+  font-weight: var(--text-font-weight);
+  /* } */
+}
+
+@define-mixin paragraph {
+  --text-line-height: var(--ao-line-height-paragraph);
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: var(--ao-spacing-16);
+}
+
+@define-mixin h1 $selector: h1 {
+  $(selector) {
+    --text-line-height: var(--ao-line-height-xxxl-header);
+    --text-font-weight: var(--ao-font-weight-light);
+    --text-font-size: var(--ao-font-size-xxxl);
+    @mixin-content;
+  }
+}
+@define-mixin h2 $selector: h2 {
+  $(selector) {
+    --text-line-height: var(
+      --ao--line-height-link,
+      var(--ao-line-height-xxl-header)
+    );
+    --text-font-weight: var(--ao-font-weight-regular);
+    --text-font-size: var(--ao-font-size-xxl);
+    margin-bottom: 3px;
+    @mixin-content;
+  }
+}
+@define-mixin h3 $selector: h3 {
+  $(selector) {
+    --text-line-height: var(--ao-line-height-xl-header);
+    --text-font-weight: var(--ao-font-weight-medium);
+    --text-font-size: var(--ao-font-size-xl);
+    margin-bottom: var(--space-8);
+    @mixin-content;
+  }
+}
+
+@define-mixin h4 $selector: h4 {
+  $(selector) {
+    --text-line-height: var(--ao-line-height-large-header);
+    --text-font-weight: var(--ao-font-weight-semi-bold);
+    --text-font-size: var(--ao-font-size-large);
+    line-height: var(--ao-line-height-large-header);
+    font-weight: var(--ao-font-weight-semi-bold);
+    font-size: var(--ao-font-size-large);
+    margin-bottom: var(--space-4);
+    @mixin-content;
+  }
+}
+
+/** Heading mixin
+* Usage:   @mixin heading h1 { color: pink }
+*/
+@define-mixin heading $level: h1 {
+  @mixin $(level);
+  $(level) {
+    margin: 0;
+    @mixin-content;
+  }
+}
+
+@define-mixin link {
+  --text-color: var(--ao-color-link-default);
+  &:hover {
+    --text-color: var(--ao-color-link-hover);
+  }
+}
+
+@define-mixin small {
+  --text-font-size: var(--ao-font-size-small);
+  @mixin-content;
+}
+
+/** 
+* Mixin providing the base label styles.
+* It should be used in the components which inherit label style
+* @arg $mb - bottom margin, default to 2 px
+*/
+@define-mixin label-base $mb: 2px {
+  --text-color: var(--ao-color-typography-default);
+  --text-font-family: var(--ao-font-family-default);
+  --text-font-size: var(--ao-font-size-medium);
+  --text-line-height: var(--ao-line-height-line);
+  --text-font-weight: var(--ao-font-weight-regular);
+  margin-bottom: $mb;
+  @mixin-content;
+}
+
+/**
+* Mixin for "Label" part of Label-value typography item
+*/
+@define-mixin label {
+  @mixin label-base;
+  --text-font-weight: var(--ao-font-weight-semi-bold);
+}
+
+/**
+* Mixin for "Label" part of Label-value typography item
+*/
+@define-mixin value {
+  @mixin label;
+  --text-font-weight: var(--ao-font-weight-regular);
+}
+
+@define-mixin subscript {
+  --text-color: var(--ao-color-typography-deemphasize);
+  --text-line-height: 14px;
+  --text-font-size: var(--ao-font-size-small);
+  margin-bottom: 5px;
+}
+
+@define-mixin big-number {
+  --text-font-family: var(--ao-font-family-big-number);
+  --text-line-height: var(--ao-line-height-big-number);
+  --text-font-size: var(--ao-font-size-xxl);
+  margin-bottom: 6px;
+}

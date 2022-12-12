@@ -1,0 +1,122 @@
+{
+  "Text Decoration": {
+    "Underline": {
+      "value": "underline",
+      "description": "",
+      "cssVariable": "--ao-text-decoration-underline"
+    }
+  },
+  "Font Family": {
+    "Default": {
+      "value": "Inter",
+      "description": "",
+      "cssVariable": "--ao-font-family-default"
+    },
+    "Monospace": {
+      "value": "Roboto Mono",
+      "description": "",
+      "cssVariable": "--ao-font-family-monospace"
+    },
+    "Big Number": {
+      "value": "Roboto Slab",
+      "description": "",
+      "cssVariable": "--ao-font-family-big-number"
+    }
+  },
+  "Font Size": {
+    "Small": {
+      "value": "11.2px",
+      "description": "",
+      "cssVariable": "--ao-font-size-small"
+    },
+    "Medium": {
+      "value": "14px",
+      "description": "",
+      "cssVariable": "--ao-font-size-medium"
+    },
+    "Large": {
+      "value": "17.5px",
+      "description": "",
+      "cssVariable": "--ao-font-size-large"
+    },
+    "XL": {
+      "value": "21.88px",
+      "description": "",
+      "cssVariable": "--ao-font-size-xl"
+    },
+    "XXL": {
+      "value": "27.34px",
+      "description": "",
+      "cssVariable": "--ao-font-size-xxl"
+    },
+    "XXXL": {
+      "value": "34.18px",
+      "description": "",
+      "cssVariable": "--ao-font-size-xxxl"
+    }
+  },
+  "Line Height": {
+    "Line": {
+      "value": "22px",
+      "description": "",
+      "cssVariable": "--ao-line-height-line"
+    },
+    "Paragraph": {
+      "value": "24px",
+      "description": "",
+      "cssVariable": "--ao-line-height-paragraph"
+    },
+    "XXXL Header": {
+      "value": "56px",
+      "description": "",
+      "cssVariable": "--ao-line-height-xxxl-header"
+    },
+    "XXL Header": {
+      "value": "45px",
+      "description": "",
+      "cssVariable": "--ao-line-height-xxl-header"
+    },
+    "XL Header": {
+      "value": "32px",
+      "description": "",
+      "cssVariable": "--ao-line-height-xl-header"
+    },
+    "Large Header": {
+      "value": "36px",
+      "description": "",
+      "cssVariable": "--ao-line-height-large-header"
+    },
+    "Big Number": {
+      "value": "26px",
+      "description": "",
+      "cssVariable": "--ao-line-height-big-number"
+    }
+  },
+  "Font Weight": {
+    "Regular": {
+      "value": 400,
+      "description": "",
+      "cssVariable": "--ao-font-weight-regular"
+    },
+    "Medium": {
+      "value": 500,
+      "description": "",
+      "cssVariable": "--ao-font-weight-medium"
+    },
+    "Semi Bold": {
+      "value": 600,
+      "description": "",
+      "cssVariable": "--ao-font-weight-semi-bold"
+    },
+    "Bold": {
+      "value": 700,
+      "description": "",
+      "cssVariable": "--ao-font-weight-bold"
+    },
+    " Light": {
+      "value": 300,
+      "description": "",
+      "cssVariable": "--ao-font-weight-light"
+    }
+  }
+}

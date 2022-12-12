@@ -1,0 +1,175 @@
+@import "../_common/typography-mixins.css";
+@import "../_common/utility-mixins.css";
+
+:host {
+  --ao-text-input-border-color: var(--ao-color-gray-200);
+  --ao-text-input-bg: var(--ao-color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ao-input-field {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+/* Styles shared between all inputs */
+.ao-input {
+  @mixin base-typography;
+  @mixin label-base 0;
+  box-sizing: border-box;
+  outline: none;
+  line-height: 1;
+  background: var(--ao-text-input-bg);
+  border: 1px solid var(--ao-text-input-border-color);
+  padding: var(--ao-spacing-4) var(--ao-spacing-8);
+  padding-right: var(--ao-spacing-32);
+  max-width: 320px;
+  height: 32px;
+  width: 100%;
+  border-radius: 4px;
+
+  &__label {
+    @mixin base-typography;
+
+    @mixin label 2px;
+    display: block;
+
+    &--hidden {
+      @mixin hidden;
+    }
+    &-optional-text {
+      margin-left: var(--ao-spacing-8);
+      font-weight: var(--ao-font-weight-regular);
+      color: var(--ao-color-typography-deemphasize);
+    }
+  }
+  &__end-adornment {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: var(--ao-spacing-8);
+    top: 0;
+    bottom: 0;
+    color: var(--ao-color-icon-non-clickable);
+    display: inline-flex;
+  }
+  &__help-text {
+    @mixin base-typography;
+    --text-color: var(--ao-color-typography-deemphasize);
+    margin-bottom: var(--ao-spacing-16);
+    line-height: 20px;
+    &--error {
+      --text-color: var(--ao-color-red-400);
+    }
+  }
+  &::placeholder {
+    color: var(--ao-color-inputs-typography-hint);
+  }
+  &:hover {
+    --ao-text-input-border-color: var(--ao-color-inputs-borders-hover);
+  }
+  &:focus,
+  &:active {
+    --ao-text-input-bg: var(--ao-color-inputs-fill-focus);
+    --ao-text-input-border-color: var(--ao-color-inputs-borders-focus);
+  }
+  &--disabled {
+    --ao-text-input-border-color: var(--ao-color-inputs-borders-disabled);
+    --ao-text-input-bg: var(--ao-color-inputs-fill-disabled);
+    color: var(--ao-color-gray-200);
+    pointer-events: none;
+
+    &::placeholder {
+      color: var(--ao-color-gray-200);
+    }
+    + .ao-input__end-adornment {
+      color: var(--ao-color-icon-disabled);
+      pointer-events: none;
+    }
+  }
+
+  &--invalid,
+  &--invalid:active,
+  &--invalid:focus,
+  &--invalid:hover {
+    --ao-text-input-border-color: var(--ao-color-red-400);
+    --ao-text-input-bg: var(--ao-color-inputs-fill-error);
+    + .ao-input__end-adornment {
+      color: var(--ao-color-inputs-icons-error);
+    }
+  }
+  &--with-help-text {
+    margin-bottom: 0;
+    + ao-icon {
+      margin-bottom: 0;
+    }
+  }
+  &--success,
+  &--success:active,
+  &--success:focus,
+  &--success:hover {
+    --ao-text-input-border-color: var(--ao-color-inputs-borders-success);
+    --ao-text-input-bg: var(--ao-color-inputs-fill-success);
+    padding-right: var(--ao-spacing-32);
+    + .ao-input__end-adornment {
+      color: var(--ao-color-inputs-icons-success);
+    }
+  }
+}
+
+.ao-text-input {
+}
+
+.ao-number-input__wrapper {
+  position: relative;
+}
+.ao-number-input {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  &__arrows {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    width: 22px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &--button {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      flex: auto;
+      height: 40%;
+      cursor: pointer;
+      color: inherit;
+      &:hover {
+        color: var(--ao-color-icon-clickable);
+      }
+    }
+
+    &--up,
+    &--down {
+      display: inline-flex;
+      align-items: center;
+      text-align: center;
+      user-select: none;
+    }
+
+    &--up {
+      margin-top: auto;
+      margin-bottom: 2px;
+    }
+    &--down {
+      margin-bottom: auto;
+      margin-top: 2px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+:root {
+  --ao-box-shadow-card: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  --ao-box-shadow-modal: 0px 0px 48px 9px rgba(0, 0, 0, 0.12),
+    0px 23px 32px 0px rgba(0, 0, 0, 0.14), 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  --ao-box-shadow-notification-panel: -1px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  --ao-box-shadow-flyout: -2px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  --ao-box-shadow-button-bar: 0px -1px 3px 0px rgba(0, 0, 0, 0.2);
+  --ao-box-shadow-button: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}

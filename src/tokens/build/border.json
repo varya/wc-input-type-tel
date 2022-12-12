@@ -1,0 +1,26 @@
+{
+  "Border Radius": {
+    "2": {
+      "value": "2px",
+      "description": "",
+      "cssVariable": "--ao-border-radius-2"
+    },
+    "4": {
+      "value": "4px",
+      "description": "",
+      "cssVariable": "--ao-border-radius-4"
+    },
+    "8": {
+      "value": "8px",
+      "description": "",
+      "cssVariable": "--ao-border-radius-8"
+    }
+  },
+  "Border Width": {
+    "Default": {
+      "value": "1px",
+      "description": "",
+      "cssVariable": "--ao-border-width-default"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --ao-font-weight-light: 300;
+  --ao-font-weight-bold: 700;
+  --ao-font-weight-semi-bold: 600;
+  --ao-font-weight-medium: 500;
+  --ao-font-weight-regular: 400;
+  --ao-line-height-big-number: 26px;
+  --ao-line-height-large-header: 36px;
+  --ao-line-height-xl-header: 32px;
+  --ao-line-height-xxl-header: 45px;
+  --ao-line-height-xxxl-header: 56px;
+  --ao-line-height-paragraph: 24px;
+  --ao-line-height-line: 22px;
+  --ao-font-size-xxxl: 34.18px;
+  --ao-font-size-xxl: 27.34px;
+  --ao-font-size-xl: 21.88px;
+  --ao-font-size-large: 17.5px;
+  --ao-font-size-medium: 14px;
+  --ao-font-size-small: 11.2px;
+  --ao-font-family-big-number: Roboto Slab;
+  --ao-font-family-monospace: Roboto Mono;
+  --ao-font-family-default: Inter;
+  --ao-text-decoration-underline: underline;
+}
